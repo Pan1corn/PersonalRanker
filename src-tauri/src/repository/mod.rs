@@ -1,0 +1,11 @@
+pub mod comparison_repository;
+pub mod dataset_repository;
+pub mod group_repository;
+pub mod history_repository;
+pub mod matrix_repository;
+pub mod media_repository;
+pub mod project_repository;
+pub mod result_repository;
+pub mod scoring_repository;
+pub mod slider_repository;
+pub mod sort_task_repository;

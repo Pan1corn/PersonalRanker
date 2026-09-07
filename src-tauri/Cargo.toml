@@ -1,0 +1,36 @@
+[package]
+name = "subjective-sorter"
+version = "1.0.0"
+description = "本地优先的主观排序桌面工具"
+authors = ["PersonalRanker Contributors"]
+license = "MIT"
+repository = "https://github.com/Pan1corn/PersonalRanker"
+edition = "2021"
+
+[lib]
+name = "subjective_sorter_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+base64 = "0.22"
+csv = "1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+thiserror = "2"
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+strip = true

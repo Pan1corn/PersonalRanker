@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+src-tauri/target
+src-tauri/gen
+package-lock.json
+PRD.md
+开发计划.md

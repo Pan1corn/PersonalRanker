@@ -1,0 +1,15 @@
+node_modules/
+.npm-cache/
+dist/
+coverage/
+playwright-report/
+test-results/
+src-tauri/target/
+docs/
+测试文件/
+*.subject-sort/
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
